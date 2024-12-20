@@ -1,0 +1,281 @@
+/* --------------- Chatbot img --------------- */
+.chatbot{
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+}
+.img-chatbot{
+    height: 50px;
+    width: 50px;
+}
+/* --------------- Estilos Generales --------------- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #333;
+    text-align: center;
+}
+
+/* --------------- Layout: Header y Footer --------------- */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none; /* Elimina los puntos o números de la lista de navegación. */
+    padding: 0; /* Elimina el relleno interno de la lista. */
+    margin: 0 auto; /* Elimina los márgenes alrededor de la lista. */
+    display: flex; /* Hace que los elementos de la lista se organicen en línea. */
+    justify-content: center; /* Centra los elementos de la lista horizontalmente. */
+}
+
+nav ul li {
+    margin: 0 15px; /* Añade espacio horizontal entre los elementos del menú. */
+    display: inline; /* Muestra los enlaces en una fila horizontal */
+    font-size:2rem;
+    margin: 0 10px; /* Agrega espacio entre los enlaces */
+    
+}
+
+nav ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces. */
+    color: #ffffff; /* Establece el color del texto de los enlaces a blanco. */
+    font-weight: bold; /* Hace que el texto de los enlaces sea más grueso. */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Añade un subrayado cuando se pasa el ratón sobre los enlaces. */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* --------------- Contenedor Principal --------------- */
+main {
+    padding: 20px;
+    margin-bottom: 50px; /* Espacio para el footer */
+}
+
+
+/* --------------- Tablas --------------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* --------------- Formularios --------------- */
+form {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+.button-acciones {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button-acciones:hover {
+    background-color: #45a049;
+  }
+  
+  .button-acciones:active {
+    background-color: #3e8e41;
+  }
+
+
+.button-editar {
+    padding: 10px 20px;
+    background-color: #403dc9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button-editar:hover {
+    background-color: #342394;
+  }
+  
+  .button-editar:active {
+    background-color: #3571be;
+  }
+.button-eliminar {
+    padding: 10px 20px;
+    background-color: #c0261b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button-eliminar:hover {
+    background-color: #b94646;
+  }
+  
+  .button-eliminar:active {
+    background-color: #b92d34;
+  }
+
+form input[type="text"], form input[type="date"], form input[type="number"], form input[type="password"], form input[type="email"], form select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+form input[type="submit"]{
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 10px; /* Espaciado interno */
+    margin: 10px 0; /* Margen externo */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+
+
+form button:hover {
+    background-color: #45a049;
+}
+
+.alert {
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.alert.success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.alert.error {
+    background-color: #f44336;
+    color: white;
+}
+
+/* --------------- Botones y Links --------------- */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.btn-danger {
+    background-color: #f44336;
+}
+
+.btn-danger:hover {
+    background-color: #e53935;
+}
+
+/* --------------- Dashboard Cards --------------- */
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.dashboard-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.dashboard-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.dashboard-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.dashboard-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.dashboard-card .btn:hover {
+    background-color: #45a049;
+}
+
+/* --------------- Responsivo --------------- */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
